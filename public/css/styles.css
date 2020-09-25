@@ -43,3 +43,10 @@
 .publishing:last-of-type {
     margin-bottom: 10px;
 }
+
+/* .content-teaser {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+} */

@@ -4,7 +4,14 @@
 <p><%= _startingContent %></p>
 <% _posts.forEach(function (post) { %>
     <h1><%= post.title %></h1>
-    <p><%= post.content %></p>
+    <p class="content-teaser">
+        <%= post.content.substring(0, 100) + " ..." %>
+        <a href="/posts/<%= post.title %>">Read more</a>
+    </p>
 <% }) %>
+<hr>
+<form action="/compose">
+    <button style="margin-top: 1%;" class="btn btn-primary btn-lg" type="submit">Create new post</button>
+</form>
 
 <%- include("partials\\footer") -%>
